@@ -1,13 +1,29 @@
 //callback, async & await, promises
 
-const id1 = setTimeout(() => {
-  console.log("hi exec after five sec");
-}, 5000);
+const loginForm = document.getElementById("loginForm");
+const response = document.getElementById("response");
 
-no = 1;
-const id2 = setInterval(() => {
-  console.log(no++);
-}, 1000);
+let userData = null;
 
-clearTimeout(id2);
-console.log("hi suddenly");
+const showResponse = (userData) => {
+  response.innerHTML = userData;
+};
+
+const verifyLogin = (name, pass) => {
+  if (name == "vivek" && pass == "vivek") {
+    userData = "login success";
+    return userData;
+  } else {
+    userData = "incorrect details";
+    return userData;
+  }
+};
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const pass = document.getElementById("pass").value;
+
+  let res = verifyLogin(name, pass);
+  showResponse(res);
+});
