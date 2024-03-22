@@ -1,17 +1,8 @@
-//Hoisting
+//coercion
 
-one()
+a = 10;
+b = '1'
 
-// console.log(number); //variable's not support hoisting
+console.log(a + b); // 101 -> convert all values to String
 
-// var number = 18;
-
-function one(){
-    console.log("one");
-}
-
-two() //arrow func not support hoisting
-
-var two = ()=>{
-    console.log("two");
-}
+console.log(a - b); // 9 -> convert all values to Number
