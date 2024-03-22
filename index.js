@@ -1,18 +1,16 @@
-//window & this
+// scope
+// global, local
 
-a = 1;
-
-//global access of value
-
-// console.log(c);
-console.log(this.c);
-console.log(window.c);
+a = 1; //-> global scope
 
 function b() {
-  c = 2;
-  console.log(c);
-  console.log(this.c);
-  console.log(window.c);
+  //function scope
+  c = 1; //create
 }
 
-b();
+if (a) {
+  // block scope
+  //some logic
+}
+
+b(); //invoke
