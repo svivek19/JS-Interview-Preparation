@@ -1,14 +1,13 @@
-// closures
+//callback, async & await, promises
 
-function one() {
-  let person = "harry";
-  let age = 22;
-  console.log(person, age, "outside");
-  return function two() {
-    console.log(person, age, "inside");
-  };
-}
+const id1 = setTimeout(() => {
+  console.log("hi exec after five sec");
+}, 5000);
 
-one();
-const func2 = one();
-func2();
+no = 1;
+const id2 = setInterval(() => {
+  console.log(no++);
+}, 1000);
+
+clearTimeout(id2);
+console.log("hi suddenly");
