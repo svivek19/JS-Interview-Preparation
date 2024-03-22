@@ -1,19 +1,14 @@
-// var - global, let, const - local
+// closures
 
-if (true) {
-  var a = 1;
-  const b = 2; //not change
-  let c = 3; // change
-
-  //   b = 6; // returns a err
-  //   c = 4;
-
-  console.log(a);
-  console.log(b);
-  console.log(c);
+function one() {
+  let person = "harry";
+  let age = 22;
+  console.log(person, age, "outside");
+  return function two() {
+    console.log(person, age, "inside");
+  };
 }
 
-// console.log("outer scope");
-// console.log(a);
-// console.log(b);
-// console.log(c);
+one();
+const func2 = one();
+func2();
