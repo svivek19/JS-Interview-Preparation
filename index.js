@@ -1,15 +1,17 @@
-//call stack
+//Hoisting
 
-let name = 'Vivek';
+one()
 
-function one() {
-    console.log('one');
-    two() //second
+// console.log(number); //variable's not support hoisting
+
+// var number = 18;
+
+function one(){
+    console.log("one");
 }
 
-function two(){
-    console.log('two');
-}
+two() //arrow func not support hoisting
 
-one() //first
-console.log(name); //third
+var two = ()=>{
+    console.log("two");
+}
