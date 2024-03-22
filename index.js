@@ -1,16 +1,19 @@
-// scope
-// global, local
+// var - global, let, const - local
 
-a = 1; //-> global scope
+if (true) {
+  var a = 1;
+  const b = 2; //not change
+  let c = 3; // change
 
-function b() {
-  //function scope
-  c = 1; //create
+  //   b = 6; // returns a err
+  //   c = 4;
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
 }
 
-if (a) {
-  // block scope
-  //some logic
-}
-
-b(); //invoke
+// console.log("outer scope");
+// console.log(a);
+// console.log(b);
+// console.log(c);
