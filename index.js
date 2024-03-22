@@ -1,8 +1,18 @@
-//coercion
+//window & this
 
-a = 10;
-b = '1'
+a = 1;
 
-console.log(a + b); // 101 -> convert all values to String
+//global access of value
 
-console.log(a - b); // 9 -> convert all values to Number
+// console.log(c);
+console.log(this.c);
+console.log(window.c);
+
+function b() {
+  c = 2;
+  console.log(c);
+  console.log(this.c);
+  console.log(window.c);
+}
+
+b();
