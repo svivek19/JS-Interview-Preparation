@@ -97,4 +97,12 @@ const num = [1, 2, 33, 65, 87, 98];
 
 const nums = num.find((res) => res > 30);
 
-console.log(nums);
+// console.log(nums);
+
+//findLast()
+
+const num1 = [1, 2, 33, 65, 87, 98];
+
+const num2 = num1.findLast((res) => res > 60);
+
+// console.log(num2);
