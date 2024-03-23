@@ -49,4 +49,14 @@ const skills = ["JS", "Java", "Python"];
 
 const skillValues = skills.values();
 
-console.log(skillValues.next().value);
+// console.log(skillValues.next().value);
+
+//every()
+
+const marks = [34, 54, 65, 76, 87];
+
+const res = marks.every((mark) => {
+  return mark > 50;
+});
+
+console.log(res);
