@@ -8,3 +8,5 @@ setTimeout(() => {
 const d = setInterval(() => {
   console.log(c++);
 }, 200);
+
+//all advance concept's in my commit
