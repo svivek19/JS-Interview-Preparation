@@ -218,3 +218,11 @@ const pet = ["cats", "dogs", "fish"];
 const petLast = ["cats", "dogs", "fish", "cats"];
 
 // console.log(petLast.lastIndexOf("cats"));
+
+//Array.isArray()
+
+const arrMine = [1, 2, 3, 4];
+
+const variable = "demo";
+
+// console.log(Array.isArray(variable));
