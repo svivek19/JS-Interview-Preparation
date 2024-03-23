@@ -90,3 +90,11 @@ const users = [
 const activeUsers = users.filter((user) => user.active);
 
 // console.log(activeUsers[1].name);
+
+//find()
+
+const num = [1, 2, 33, 65, 87, 98];
+
+const nums = num.find((res) => res > 30);
+
+console.log(nums);
