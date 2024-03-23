@@ -122,3 +122,17 @@ const fineLastIndex = [1, 2, 33, 65, 87, 8];
 const val = fineLastIndex.findLastIndex((res) => res > 10);
 
 // console.log(val);
+
+//flat()
+
+const matrix = [
+  [1, 2, 3],
+  [4, [55, 555, 5555], 6],
+  [7, 8, 9],
+];
+
+const flatArr = [].concat(...matrix);
+
+const flatArrES6 = matrix.flat(2);
+
+console.log(flatArrES6);
