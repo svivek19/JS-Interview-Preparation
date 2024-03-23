@@ -72,3 +72,21 @@ const arr4 = [1, 2, 3, 4];
 // console.log(arr2.fill(5, 1)); //1,5,5,5
 // console.log(arr3.fill(8)); // 8,8,8,8
 // console.log(arr4.fill("hello")); // hello,hello,hello,hello
+
+//filter()
+
+const humanNames = ["John", "Juli", "Anu", "Joe", "Harry", "Pottor"];
+
+const value = humanNames.filter((names) => names.length > 3);
+
+// console.log(value);
+
+const users = [
+  { id: 1, name: "juli", active: true },
+  { id: 2, name: "John", active: false },
+  { id: 3, name: "benny", active: true },
+];
+
+const activeUsers = users.filter((user) => user.active);
+
+// console.log(activeUsers[1].name);
