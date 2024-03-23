@@ -158,3 +158,9 @@ const from = Array.from(name);
 const converedArr = Array.of("John", 3, true);
 
 // console.log(converedArr);
+
+//join()
+
+const days = ["sun", "mon"];
+
+// console.log(days.join(" -"));
