@@ -252,13 +252,12 @@ const finalValue = user.some((emp) => emp.isAllowToParty === false);
 
 // console.log(finalValue);
 
-//sort()
-
-const demoSort = ["banana", "apple", "orange", "grapes"];
+//sort(), toSorted()
 
 const sortNum = [23, 54, 756, 12, 1, 45, 76];
 
-const sortvalNum = sortNum.sort((a, b) => b - a);
-const sortval = demoSort.sort();
+// const sortvalNum = sortNum.sort((a, b) => b - a);
+const sorttovalNum = sortNum.toSorted((a, b) => b - a);
 
-// console.log(sortNum);
+// console.log(sortvalNum, sortNum);
+console.log(sorttovalNum, sortNum);
