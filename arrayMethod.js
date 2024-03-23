@@ -284,3 +284,11 @@ let finalamt = amount.toLocaleString("en", {
 const data = ["a", "b", "r", "z", 234, true];
 
 // console.log(data.toString().replaceAll(",", " "));
+
+//with()
+
+const dataVals = [1, 2, 3, 4, 5];
+
+dataVals[3] = "four";
+
+console.log(dataVals.with(2, "Three"));
