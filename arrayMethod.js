@@ -164,3 +164,13 @@ const converedArr = Array.of("John", 3, true);
 const days = ["sun", "mon"];
 
 // console.log(days.join(" -"));
+
+//keys()
+
+const demo = ["hi", "hello", "hru", "wru"];
+
+const keys = demo.keys();
+
+for (let kys of keys) {
+  //   console.log(demo[kys]);
+}
