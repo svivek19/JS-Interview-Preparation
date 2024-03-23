@@ -179,6 +179,20 @@ for (let kys of keys) {
 
 const spendAmount = [343, 565, 76, 87, 984];
 
-const total = spendAmount.reduce((prev, curr) => prev + curr);
+const total = spendAmount.reduce((prev, curr) => {
+  //   console.log(prev, curr);
+  return prev + curr;
+}, 0);
 
 // console.log(total);
+
+//reduceRight()
+
+const reduceright = [343, 565, 76, 87, 984];
+
+const final = spendAmount.reduceRight((prev, curr) => {
+  console.log(prev, curr);
+  return prev + curr;
+}, 0);
+
+// console.log(final);
