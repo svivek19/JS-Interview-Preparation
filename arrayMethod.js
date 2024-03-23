@@ -260,4 +260,21 @@ const sortNum = [23, 54, 756, 12, 1, 45, 76];
 const sorttovalNum = sortNum.toSorted((a, b) => b - a);
 
 // console.log(sortvalNum, sortNum);
-console.log(sorttovalNum, sortNum);
+// console.log(sorttovalNum, sortNum);
+
+//toLocaleString()
+
+const myDate = new Date("23 Aug 2003 14:10:00 UTC");
+
+let resFinal = myDate.toLocaleString("hi-IN", { timeZone: "Asia/Dubai" });
+
+// console.log(resFinal);
+
+const amount = 273974;
+
+let finalamt = amount.toLocaleString("en", {
+  currency: "INR",
+  style: "currency",
+});
+
+// console.log(finalamt);
