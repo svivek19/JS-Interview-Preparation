@@ -1,16 +1,10 @@
-//Event loops
+let c = 0;
 
-const welcome = () => console.log("hello");
-const load = () =>
-  setTimeout(() => {
-    console.log("load");
-  }, 2000);
-const one = () => console.log("one");
+setTimeout(() => {
+  console.log("hi");
+  clearInterval(d);
+}, 2000);
 
-welcome();
-load();
-one();
-
-// hello
-// one
-// load
+const d = setInterval(() => {
+  console.log(c++);
+}, 200);
