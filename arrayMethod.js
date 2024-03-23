@@ -106,3 +106,11 @@ const num1 = [1, 2, 33, 65, 87, 98];
 const num2 = num1.findLast((res) => res > 60);
 
 // console.log(num2);
+
+//findIndex()
+
+const numIndex = [1, 2, 33, 65, 87, 98];
+
+const index = numIndex.findIndex((res) => res > 60);
+
+// console.log(index);
