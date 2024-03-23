@@ -42,3 +42,11 @@ const toolsEntries = tools.entries();
 for (let [tools, index] of toolsEntries) {
   //   console.log(tools, index);
 }
+
+//values()
+
+const skills = ["JS", "Java", "Python"];
+
+const skillValues = skills.values();
+
+console.log(skillValues.next().value);
