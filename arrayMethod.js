@@ -230,10 +230,24 @@ const variable = "demo";
 //reverse(), toReverse()
 
 const dummy = ["apple", "lemon", "tomato"];
-console.log("original", dummy);
+// console.log("original", dummy);
 
 let dummyReverse = dummy.reverse();
 let dummyToReverse = dummy.toReversed();
 
-console.log("reverse", dummyReverse);
-console.log("toReverse", dummyToReverse);
+// console.log("reverse", dummyReverse);
+// console.log("toReverse", dummyToReverse);
+
+//some()
+
+const user = [
+  { id: 1, name: "juli", isAllowToParty: true },
+  { id: 2, name: "John", isAllowToParty: true },
+  { id: 3, name: "benny", isAllowToParty: false },
+  { id: 4, name: "rohan", isAllowToParty: true },
+  { id: 5, name: "lisha", isAllowToParty: true },
+];
+
+const finalValue = user.some((emp) => emp.isAllowToParty === false);
+
+// console.log(finalValue);
