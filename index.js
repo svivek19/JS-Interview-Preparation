@@ -5,22 +5,22 @@ const response = document.getElementById("response");
 
 let userData = null;
 
-console.log("hi");
-
 const showResponse = (userData) => {
   response.innerHTML = userData;
 };
 
-const verifyLogin = (name, pass, callback) => {
-  setTimeout(() => {
-    if (name == "vivek" && pass == "vivek") {
-      userData = "login success";
-      callback(userData);
-    } else {
-      userData = "incorrect details";
-      callback(userData);
-    }
-  }, 2000);
+const verifyLogin = (name, pass) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (name == "vivek" && pass == "vivek") {
+        userData = "login success";
+        resolve(userData);
+      } else {
+        error = "incorrect details";
+        reject(error);
+      }
+    }, 2000);
+  });
 };
 
 loginForm.addEventListener("submit", (e) => {
@@ -28,5 +28,11 @@ loginForm.addEventListener("submit", (e) => {
   const name = document.getElementById("name").value;
   const pass = document.getElementById("pass").value;
 
-  verifyLogin(name, pass, showResponse);
+  verifyLogin(name, pass)
+    .then((userData) => {
+      showResponse(userData);
+    })
+    .catch((error) => {
+      showResponse(error);
+    });
 });
