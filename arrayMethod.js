@@ -191,8 +191,18 @@ const total = spendAmount.reduce((prev, curr) => {
 const reduceright = [343, 565, 76, 87, 984];
 
 const final = spendAmount.reduceRight((prev, curr) => {
-  console.log(prev, curr);
+  //   console.log(prev, curr);
   return prev + curr;
 }, 0);
 
 // console.log(final);
+
+//includes()
+
+const numers = [1, 2, 3, 4, 5];
+
+// console.log(numers.includes(5));
+
+const pets = ["cats", "dogs", "fish"];
+
+// console.log(pets.includes("cats"));
