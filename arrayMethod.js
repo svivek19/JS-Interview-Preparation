@@ -174,3 +174,11 @@ const keys = demo.keys();
 for (let kys of keys) {
   //   console.log(demo[kys]);
 }
+
+//reduce()
+
+const spendAmount = [343, 565, 76, 87, 984];
+
+const total = spendAmount.reduce((prev, curr) => prev + curr);
+
+// console.log(total);
