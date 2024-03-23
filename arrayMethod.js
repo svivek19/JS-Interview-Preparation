@@ -59,4 +59,16 @@ const res = marks.every((mark) => {
   return mark > 50;
 });
 
-console.log(res);
+// console.log(res);
+
+//fill()
+
+const arr1 = [1, 2, 3, 4];
+const arr2 = [1, 2, 3, 4];
+const arr3 = [1, 2, 3, 4];
+const arr4 = [1, 2, 3, 4];
+
+// console.log(arr1.fill(0, 2, 3)); // 1,2,0,4
+// console.log(arr2.fill(5, 1)); //1,5,5,5
+// console.log(arr3.fill(8)); // 8,8,8,8
+// console.log(arr4.fill("hello")); // hello,hello,hello,hello
