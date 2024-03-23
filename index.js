@@ -1,4 +1,4 @@
-//callback, async & await, promises
+// async & await
 
 const loginForm = document.getElementById("loginForm");
 const response = document.getElementById("response");
@@ -28,11 +28,13 @@ loginForm.addEventListener("submit", (e) => {
   const name = document.getElementById("name").value;
   const pass = document.getElementById("pass").value;
 
-  verifyLogin(name, pass)
-    .then((userData) => {
+  async function login() {
+    try {
+      await verifyLogin(name, pass);
       showResponse(userData);
-    })
-    .catch((error) => {
+    } catch {
       showResponse(error);
-    });
+    }
+  }
+  login();
 });
