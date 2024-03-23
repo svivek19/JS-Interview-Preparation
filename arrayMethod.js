@@ -144,3 +144,11 @@ const arr = [1, 2, 3];
 const flatMap = arr.flatMap((num) => (num === 2 ? [22, 222] : 0));
 
 // console.log(flatMap);
+
+//from()
+
+const name = "Joe";
+
+const from = Array.from(name);
+
+// console.log(from); //['J','o','e']
