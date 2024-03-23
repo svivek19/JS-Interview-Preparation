@@ -114,3 +114,11 @@ const numIndex = [1, 2, 33, 65, 87, 98];
 const index = numIndex.findIndex((res) => res > 60);
 
 // console.log(index);
+
+//findLastIndex()
+
+const fineLastIndex = [1, 2, 33, 65, 87, 8];
+
+const val = fineLastIndex.findLastIndex((res) => res > 10);
+
+// console.log(val);
