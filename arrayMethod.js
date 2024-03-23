@@ -152,3 +152,9 @@ const name = "Joe";
 const from = Array.from(name);
 
 // console.log(from); //['J','o','e']
+
+//of()
+
+const converedArr = Array.of("John", 3, true);
+
+// console.log(converedArr);
