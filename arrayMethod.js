@@ -135,4 +135,12 @@ const flatArr = [].concat(...matrix);
 
 const flatArrES6 = matrix.flat(2);
 
-console.log(flatArrES6);
+// console.log(flatArrES6);
+
+//flatMap()
+
+const arr = [1, 2, 3];
+
+const flatMap = arr.flatMap((num) => (num === 2 ? [22, 222] : 0));
+
+// console.log(flatMap);
