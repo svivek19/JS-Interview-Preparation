@@ -226,3 +226,14 @@ const arrMine = [1, 2, 3, 4];
 const variable = "demo";
 
 // console.log(Array.isArray(variable));
+
+//reverse(), toReverse()
+
+const dummy = ["apple", "lemon", "tomato"];
+console.log("original", dummy);
+
+let dummyReverse = dummy.reverse();
+let dummyToReverse = dummy.toReversed();
+
+console.log("reverse", dummyReverse);
+console.log("toReverse", dummyToReverse);
