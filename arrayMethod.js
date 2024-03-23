@@ -206,3 +206,9 @@ const numers = [1, 2, 3, 4, 5];
 const pets = ["cats", "dogs", "fish"];
 
 // console.log(pets.includes("cats"));
+
+//indexOf()
+
+const pet = ["cats", "dogs", "fish"];
+
+// console.log(pet.indexOf("dogs"));
