@@ -278,3 +278,9 @@ let finalamt = amount.toLocaleString("en", {
 });
 
 // console.log(finalamt);
+
+//toString()
+
+const data = ["a", "b", "r", "z", 234, true];
+
+// console.log(data.toString().replaceAll(",", " "));
