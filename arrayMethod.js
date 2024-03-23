@@ -212,3 +212,9 @@ const pets = ["cats", "dogs", "fish"];
 const pet = ["cats", "dogs", "fish"];
 
 // console.log(pet.indexOf("dogs"));
+
+//lastIndexOf()
+
+const petLast = ["cats", "dogs", "fish", "cats"];
+
+// console.log(petLast.lastIndexOf("cats"));
